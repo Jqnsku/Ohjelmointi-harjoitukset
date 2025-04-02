@@ -1,0 +1,1114 @@
+@font-face {
+
+    font-family: 'Open Sans';
+    src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    --fontti-perhe-leipäteksti: "Open Sans";
+    --fontti-perhe-nappi: "Open Sans";
+    --fontti-koko-leipäteksti: 15px;
+    --fontti-koko-otsikko: 20px;
+    --väri-musta: rgb(48, 49, 52);
+    --väri-valkoinen: white;
+    --väri-ensisijainen: #212429;
+    --väri-toissijainen: #181C1F;
+    --väri-tausta: #212429;
+    --väri-teksti-yläpalkki: var(--väri-ensisijainen);
+    --väri-teksti-alapalkki: var(--väri-toissijainen);
+    --väri-teksti-sisältö: #ced4da;
+    --väri-reunus: ;
+    --väli-x1: 10px;
+    --väli-x2: 20px;
+    --väli-x25: 25px;
+    --väli-x3: 30px;
+    --väli-x4: 40px;
+    --väli-x5: 50px;
+    --leveys-sivu: 1200px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.projekti-banneri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 60px;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --leveys-sivu: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --leveys-sivu: 100%;
+    }
+}
+
+body {
+    font-family: var(--fontti-perhe-leipäteksti);
+    margin: 0 auto;
+}
+
+button {
+    font-family: var(--fontti-perhe-nappi);
+}
+
+ul {
+    padding-left: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* valitsin {
+    sääntö: arvo;
+    sääntö: arvo;
+} */
+
+footer__sivun-alapalkki__harmaa-alue,
+footer__sivun-alapalkki__harmaa-alue {
+    padding: 0px 0;
+}
+
+:any-link {
+    color: var(--väri-valkoinen);
+}
+
+.otsikko {
+    color: #ffffff;
+}
+
+.kaupat {
+    flex-wrap: wrap;
+}
+
+.sivun-sisältö {
+    display: flex;
+    min-height: 14px;
+    max-height: 14px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.sivun-sisältö {
+    background-color: white;
+    color: var(--väri-musta);
+}
+
+.sivun-yläpalkki {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--väri-ensisijainen);
+    color: white;
+}
+
+.yläpalkki__sisältö {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: var(--väli-x3);
+    padding-bottom: var(--väli-x3);
+    height: 2px;
+    width: var(--leveys-sivu);
+    gap: 10px;
+}
+
+.yläpalkki__kuva {
+    height: 20px;
+}
+
+.yläpalkki__sisältö__jimms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 110px;
+    height: 60px;
+    border: solid 2px rgb(255, 144, 41);
+    background-color: rgb(223, 116, 9);
+    color: #ffa722;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    border-radius: 50%
+}
+
+.yläpalkki__sisältö__j {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    color: #eb8d00;
+    font-size: 40px;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+    .yläpalkki__sisältö__jimms {
+        display: none;
+    }
+    .yläpalkki__sisältö__j {
+        display: flex;
+    }
+}
+
+
+.yläpalkki__sisältö__hae-tuotteista {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    padding: 6px;
+    border-color: 2px solid var(--väri-valkoinen);
+    border-radius: 3px;
+    border: solid 2px #747879;
+    background-color: white;
+    color: black;
+}
+
+.yläpalkki__sisältö__hae-tuotteista__kuva__kuva {
+    width: 35px;
+    height: 35px;
+}
+
+.yläpalkki__sisältö__hae-tuotteista {
+    flex: 1 1 auto;
+}
+
+.sivun-yläpalkki__valikko__kuva {
+    background-color: #212429;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.sivun-yläpalkki__valikko__kuva:hover {
+    background-color: white;
+}
+
+.sivun-yläpalkki__valikko__kuva:hover .yläpalkki__kuva--tumma {
+    display: none;
+
+}
+
+.sivun-yläpalkki__valikko__kuva:hover .yläpalkki__kuva--valkea {
+    display: none;
+}
+
+.yläpalkki__kuva {
+    width: 35px;
+    height: 35px;
+}
+
+.yläpalkki__kuva--valkea {
+    display: none;
+}
+
+.yläpalkki__kuva--tumma {
+    display: none;
+}
+
+.yläpalkki__sisältö__kirjaudu__luo-tili {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.yläpalkki__sisältö__kirjaudu__luo-tili:hover {
+    background-color: white;
+    color: black;
+    height: 48px;
+}
+
+@media (max-width: 800px) {
+    .yläpalkki__sisältö__kirjaudu__luo-tili__teksti {
+        display: none;
+        justify-content: space-between;
+    }
+}
+
+.kirjaudu__kuva {
+    width: 28px;
+    height: 28px;
+}
+
+.kirjaudu__kuva--valkea {
+    display: flex;
+}
+
+.kirjaudu__kuva--tumma {
+    display: none;
+}
+
+.yläpalkki__sisältö__kirjaudu__luo-tili:hover .kirjaudu__kuva--valkea {
+    display: none;
+}
+
+.yläpalkki__sisältö__kirjaudu__luo-tili:hover .kirjaudu__kuva--tumma {
+    display: flex;
+}
+
+.yläpalkki__sisältö__ostoskori {
+
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgb(38, 44, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 3px;
+}
+
+.yläpalkki__sisältö__ostoskori:hover {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.ostoskori__kuva {
+    width: 28px;
+    height: 28px;
+}
+
+.ostoskori__kuva--valkea {
+    display: flex;
+}
+
+.ostoskori__kuva--tumma {
+    display: none;
+}
+
+.yläpalkki__sisältö__ostoskori:hover .ostoskori__kuva--valkea {
+    display: none;
+}
+
+.yläpalkki__sisältö__ostoskori:hover .ostoskori__kuva--tumma {
+    display: flex;
+}
+
+.sivun-yläpalkki__kategoriat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1px;
+    width: var(--leveys-sivu);
+}
+
+@media (max-width: 1200px) {
+    .sivun-yläpalkki__kategoriat {
+        display: none;
+    }
+
+    .sivun-yläpalkki__valikko__kuva:hover .yläpalkki__kuva--tumma {
+        display: flex;
+
+    }
+
+    .sivun-yläpalkki__valikko__kuva:hover .yläpalkki__kuva--valkea {
+        display: none;
+    }
+
+    .yläpalkki__kuva--valkea {
+        display: flex;
+    }
+
+    .yläpalkki__kuva--tumma {
+        display: none;
+    }
+}
+
+.sivun-yläpalkki__kategoriat__kategoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sivun-yläpalkki__kategoriat__kategoria:hover {
+    justify-content: center;
+    color: orange;
+    background-color: white;
+    height: 40px;
+}
+
+.yläpalkki__sisältö__hae-tuotteista2 {
+    display: none;
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 1px;
+    border-radius: 3px;
+    align-items: center;
+    border: solid 2px #747879;
+    background-color: white;
+    color: black;
+}
+
+.yläpalkki__sisältö__hae-tuotteista__kuva__kuva2 {
+    width: 35px;
+    height: 35px;
+}
+
+.yläpalkki__sisältö__hae-tuotteista2 {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 1000px) {
+    .sivun-alapalkki__harmaa-alue__ylä, 
+    .sivun-alapalkki__harmaa-alue__ala {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .yläpalkki__sisältö__hae-tuotteista {
+        display: none;
+    }
+    .yläpalkki__sisältö__hae-tuotteista2 {
+        display: flex;
+        width: 100%;
+    }
+    .yläpalkki__sisältö__jimms {
+        display: flex;
+    }
+    .yläpalkki__sisältö__j {
+        display: none;
+    }
+    .yläpalkki__sisältö__hae-tuotteista__kuva__kuva2 {
+        display: flex;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.sivun-alapalkki {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--väri-tausta);
+    color: var(--väri-teksti-sisältö);
+}
+
+.sivun-alapalkki__harmaa-alue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-size: var(--fontti-koko-leipäteksti);
+    width: var(--leveys-sivu);
+}
+
+.sivun-alapalkki__harmaa-alue__ylä,
+.sivun-alapalkki__harmaa-alue__ala {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sivun-alapalkki__harmaa-alue__ylä {
+    border-bottom: solid 1px rgba(128, 128, 128, 0.616);
+}
+
+header,
+.sivun-alapalkki__harmaa-alue {
+    padding-top: var(--väli-x1);
+    padding-bottom: 10px;
+}
+
+.sivun-alapalkki__sarake {
+    flex: 1;
+    /* flex:auto; */
+}
+
+@media (max-width: 1000px) {
+    .sivun-alapalkki__sarake {
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sivun-alapalkki__sarake {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+.asiakaspalvelu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.asiakaspalvelu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.616);
+    width: 25cap;
+}
+
+.otsikko {
+    text-transform: uppercase;
+    font-size: var(--fontti-koko-otsikko);
+}
+
+.asiakaspalvelu__otsikko {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 1px;
+    padding-left: 10px;
+}
+
+.asiakaspalvelu__otsikko {
+    text-transform: uppercase;
+}
+
+.asiakaspalvelu__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.asiakaspalvelu__sisältö__aukioloajat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: var(--väli-x1);
+}
+
+.asiakaspalvelu__sisältö__puhelinnumero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.asiakaspalvelu__sisältö__puhelinnumero:hover {
+    color: orange
+}
+
+.asiakaspalvelu__sisältö__puhelinnumero__kuva {
+    width: 28;
+    height: 28;
+}
+
+.asiakaspalvelu__sisältö__sähköposti {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.asiakaspalvelu__sisältö__sähköposti:hover {
+    color: orange
+}
+
+.asiakaspalvelu__sisältö__sähköposti__kuva {
+    width: 28;
+    height: 28;
+}
+
+.yritysmyynti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-left: 20px;
+}
+
+.yritysmyynti__otsikko {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 1px;
+    padding-left: 8px;
+}
+
+.yritysmyynti__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 15px;
+}
+
+.yritysmyynti__sisältö__aukioloajat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--väli-x1);
+}
+
+.yritysmyynti__sisältö__puhelinnumero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: var(--väli-x3);
+}
+
+.yritysmyynti__sisältö__puhelinnumero:hover {
+    color: orange
+}
+
+.yritysmyynti__sisältö__puhelinnumero__kuva {
+    width: 28;
+    height: 28;
+}
+
+.yritysmyynti__sisältö_sähköposti {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.yritysmyynti__sisältö_sähköposti:hover {
+    color: orange
+}
+
+.yritysmyynti__sisältö_sähköposti__kuva {
+    width: 28;
+    height: 28;
+}
+
+.myymälä {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-right: 15px;
+}
+
+.myymälä__otsikko {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.myymälä__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 1px;
+}
+
+.myymälä__sisältö__aukioloajat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myymälä__sisältö__aukioloajat__la {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.myymälä__sisältö__maksuvälineet {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.myymälä__sisältö__osoite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.myymälä__sisältö__osoite:hover {
+    color: orange;
+}
+
+.myymälä__sisältö__osoite__kuva {
+    width: 28;
+    height: 28;
+}
+
+.myymälä__sisältö__postinumero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 28px;
+}
+
+.myymälä__sisältö__postinumero:hover {
+    color: orange;
+}
+
+.yhteisöt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 20px;
+}
+
+.yhteisöt_otsikko {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.yhteisöt__somet {
+    display: flex;
+    gap: 8px;
+    margin: 1px;
+}
+
+.yhteisöt__somet__some {
+    display: flex;
+}
+
+.yhteisöt__kuva {
+    width: 24px;
+    height: 24px;
+}
+
+.yhteisöt__kuva--valkea {
+    display: flex;
+}
+
+.yhteisöt__kuva--tumma {
+    display: none;
+}
+
+.yhteisöt__somet__some:hover .yhteisöt__kuva--tumma {
+    display: flex;
+}
+
+.yhteisöt__somet__some:hover .yhteisöt__kuva--valkea {
+    display: none;
+}
+
+.uutiskirje {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-right: 15px;
+}
+
+.uutiskirje__otsikko {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.uutiskirje__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 1px;
+}
+
+.uutiskirje__sisältö__uutiskirje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uutiskirje__sisältö__tilaa-uutiskirje {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.uutiskirje__sisältö__tilaa__uutiskirje__nappi {
+    background-color:  #EE6622;
+    border: solid 2px  #EE6622;
+    color: rgb(255, 255, 255);
+    padding: var(--väli-x1);
+}
+
+.uutiskirje__sisältö__tilaa-uutiskirje {
+    background-color:  #EE6622;
+    border: solid 2px rgb(255, 255, 255);
+    border-color:  #EE6622;
+    background: rgb(255, 166, 0);
+    border-radius: 3px;
+}
+
+.uutiskirje__sisältö__tilaa-uutiskirje {
+    text-transform: uppercase;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 20px;
+    flex: 1;
+}
+
+.info__otsikko {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 6px;
+}
+
+.info__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 1px;
+    padding-bottom: 15px;
+}
+
+.info__sisältö__yhteystiedot {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__yhteystiedot:hover {
+    color: orange;
+}
+
+.info__sisältö__yhteystiedot__kuva {
+    width: 28;
+    height: 28;
+    margin-inline-end: 8px;
+}
+
+.info__sisältö__toimitustavat {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__toimitustavat:hover {
+    color: orange;
+}
+
+.info__sisältö__toimitustavat__kuva {
+    width: 28;
+    height: 28;
+    margin-inline-end: 8px;
+}
+
+.info__sisältö__maksutavat {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__maksutavat:hover {
+    color: orange;
+}
+
+.info__sisältö__maksutavat__kuva {
+    width: 28;
+    height: 28;
+    margin-inline-end: 8px;
+}
+
+.info__sisältö__takuupalautus {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__takuupalautus:hover {
+    color: orange;
+}
+
+.info__sisältö__takuupalautus__kuva {
+    width: 28;
+    height: 28;
+    margin-inline-end: 8px;
+}
+
+.info__sisältö__palvelutjahuolto {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.info__sisältö__palvelutjahuolto:hover {
+    color: orange;
+}
+
+.info__sisältö__palvelutjahuolto__kuva {
+    width: 28;
+    height: 28;
+}
+
+.info__sisältö__kysymykset {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__kysymykset:hover {
+    color: orange;
+}
+
+.info__sisältö__kysymykset__kuva {
+    width: 28;
+    height: 28;
+}
+
+.info__sisältö__yritysmyynti {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__yritysmyynti:hover {
+    color: orange;
+}
+
+.info__sisältö__yritysmyynti__kuva {
+    width: 28;
+    height: 28;
+}
+
+.info__sisältö__ura {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__ura:hover {
+    color: orange;
+}
+
+.info__sisältö__ura__kuva {
+    width: 28;
+    height: 28;
+    margin-inline-end: 8px;
+}
+
+.info__sisältö__tuoteturva {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info__sisältö__tuoteturva:hover {
+    color: orange;
+}
+
+.info__sisältö__tuoteturva__kuva {
+    width: 28;
+    height: 28;
+    margin-inline-end: 8px;
+}
+
+.shop-in-shops {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 1;
+    padding-right: 15px;
+}
+
+.shop-in-shops ul li:after {
+    content: "|";
+}
+
+.shop-in-shops__otsikko {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    height: 12px;
+}
+
+.shop-in-shops__sisältö {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.kaupat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.kaupat__kauppa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.artikkelit-ja-blogit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.artikkelit-ja-blogit__otsikko {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 8px;
+}
+
+.artikkelit-ja-blogit__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.artikkelit-ja-blogit__sisältö__oppaat {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.artikkelit-ja-blogit__sisältö__blogi {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.sertifikaatit-ja-palkinnot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 1;
+}
+
+.sertifikaatit-ja-palkinnot__otsikko {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.sertifikaatit-ja-palkinnot__sisältö {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: 1px;
+}
+
+.sertifikaatit-ja-palkinnot__sisältö__kauppalehti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border: solid 5px white;
+    background-color: #183C86;
+    color: white;
+    border: double 4px;
+    border-radius: 50%
+}
+
+.sertifikaatit-ja-palkinnot__sisältö__paras-kauppa {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border: solid 12px#FF3364;
+    background-color: #FBCF62;
+    color: white;
+    border-radius: 50%
+}
+
+.sivun-alapalkki__musta-alue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sivun-alapalkki__musta-alue {
+    background-color: var(--väri-toissijainen);
+    color: white;
+    width: 100%;
+}
+
+.alapalkki__sisältö {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.alapalkki__sisältö__takuu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: var(--väli-x1);
+}
+
+.alapalkki__sisältö__tietosuoja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: var(--väli-x1);
+}
+
+.alapalkki__sisältö__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
